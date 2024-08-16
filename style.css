@@ -8,6 +8,10 @@
   position: relative;
 
 }
+.skill-info-container{
+  width: auto;
+  height: 110px;
+}
 .card-container::after{
   content: ""; /* Necesario para que el pseudo-elemento se muestre */
   width: 306px; /* Igual tamaño que el contenedor original */
