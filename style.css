@@ -3,10 +3,38 @@
   width: 300px;
   height: 540px;
   background-color: #4c4654;
-  border-radius: 20px;
-  border: #8e82b6 7px solid ;
-  box-shadow: #000 1px 1px 1px 1px;
+  border-radius: 16px;
+  border: #a296c9 6px solid ;
+  position: relative;
+
 }
+.card-container::after{
+  content: ""; /* Necesario para que el pseudo-elemento se muestre */
+  width: 306px; /* Igual tamaño que el contenedor original */
+  height: 546px;
+  background-color: #ff6b6b; /* Cambia a otro color para diferenciarlo */
+  border-radius: 20px;
+  border:#857aa2 7px solid;
+  box-shadow: #000 1px 0px 1px 2px;
+  position: absolute; /* Para permitir la superposición y posicionamiento */
+  top: -10px;
+  left: -10px; /* Colocar el pseudo-elemento a la derecha del contenedor original */
+  z-index: -1; 
+}
+.card-container::before{
+  content: ""; /* Necesario para que el pseudo-elemento se muestre */
+  width: 298px; /* Igual tamaño que el contenedor original */
+  height: 536px;
+  
+  border-radius: 12px;
+  border:#090909 2px solid;
+  
+  position: absolute; /* Para permitir la superposición y posicionamiento */
+  /* top: -10px; */
+  /* left: -10px; Colocar el pseudo-elemento a la derecha del contenedor original */
+  z-index: 10; 
+}
+
 .attributes{
   color: #ffffff;
   display: flex;
